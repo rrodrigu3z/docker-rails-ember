@@ -18,6 +18,17 @@ Once you have Docker, clone down the latest stable copy of this source.
 $ git clone git@github.com:joshbeitler/docker-rails-ember.git
 ```
 
+Next, you need to set up a `.env.web` file to store any sensitive information
+that Rails might need, such as API keys or secret keys. This is excluded from
+Git for a reason!
+
+```
+PORT=3000
+MIN_THREADS=4
+MAX_THREADS=16
+SECRET_KEY_BASE= [...]
+```
+
 After that, you should be golden. Note that building the `web` and `ember`
 containers will take a little while, so grab some coffee and get comfy.
 

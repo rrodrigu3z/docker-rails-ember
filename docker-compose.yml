@@ -6,8 +6,10 @@ web:
     - "3000:3000"
   links:
     - db
-  environment:
-    - SECRET_KEY_BASE=921114620e49341ab8d1d89bdebeccbd15bd3080483cebafadc9997b08151db5919f1987f90a20bf7dce38a7fff40751405ac105087ddeaef7447bda7f566905
+  env_file:
+    - ./.env.web
+  # environment:
+  #   - SECRET_KEY_BASE=921114620e49341ab8d1d89bdebeccbd15bd3080483cebafadc9997b08151db5919f1987f90a20bf7dce38a7fff40751405ac105087ddeaef7447bda7f566905
 
 db:
   image: library/postgres:9.3
