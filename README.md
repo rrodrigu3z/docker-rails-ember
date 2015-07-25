@@ -47,6 +47,7 @@ that you don't need to enter in the IP, but this is entirely up to you.
 
 - Ember uses EmberCLI and Ember Data
 - Rails has Devise, Active Admin, and a full test suit already set up
+- Postgres for the database
 
 ## License
 
