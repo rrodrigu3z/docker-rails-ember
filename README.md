@@ -1,4 +1,4 @@
-# docker-rails-ember
+# docker-rails-ember [![Circle CI](https://circleci.com/gh/joshbeitler/docker-rails-ember.svg?style=svg)](https://circleci.com/gh/joshbeitler/docker-rails-ember)
 
 > The most complete and functional setup for containerized Rails apps with
 Ember front-ends.
