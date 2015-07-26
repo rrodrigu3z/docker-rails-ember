@@ -1,6 +1,8 @@
 FROM ruby:2.2.0
 RUN apt-get update -qq && apt-get install -y build-essential nodejs npm nodejs-legacy
+
 RUN gem install compass
+RUN gem install bourbon
 
 RUN mkdir /frontend
 

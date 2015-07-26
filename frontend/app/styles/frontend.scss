@@ -1,5 +1,35 @@
+@import 'normalize';
+@import 'bourbon';
+@import 'neat';
+
 html {
-  body {
-    font-family: sans-serif;
+  font-family: system, -apple-system, '.SFNSDisplay-Regular', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.375em;
+}
+
+#app-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  line-height: 55px;
+  height: 55px;
+
+  nav {
+    @include outer-container;
+  }
+}
+
+#task-list {
+  padding-left: 0;
+
+  @include outer-container;
+
+  li {
+    list-style-type: none;
   }
 }
