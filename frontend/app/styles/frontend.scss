@@ -1,35 +1,33 @@
 @import 'normalize';
 @import 'bourbon';
+@import 'variables';
+@import 'bitters';
 @import 'neat';
 
-html {
-  font-family: system, -apple-system, '.SFNSDisplay-Regular', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-  font-size: 16px;
-  color: #333;
-}
+@import 'mixins';
 
-body {
-  font-size: 1em;
-  line-height: 1.375em;
-}
+@import 'components/task-list-item';
 
 #app-header {
-  margin-bottom: 20px;
+  background-color: #fafafa;
+  margin-bottom: em(20);
   border-bottom: 1px solid #ececec;
-  line-height: 55px;
-  height: 55px;
+  line-height: em(55);
+  height: em(55);
+
+  a {
+    display: inline;
+  }
 
   nav {
     @include outer-container;
   }
+
+  aside {
+    @include float-right;
+  }
 }
 
 #task-list {
-  padding-left: 0;
-
   @include outer-container;
-
-  li {
-    list-style-type: none;
-  }
 }
