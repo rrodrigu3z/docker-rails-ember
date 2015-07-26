@@ -1,7 +1,64 @@
 .task-list-item {
-  margin-bottom: em(20);
+  $base-border-radius: em(3) !default;
+  $base-spacing: em(20) !default;
+  $action-color: $blue !default;
+  $base-font-color: $dark-gray !default;
+  $task-list-item-gutter: 1.4em;
+  $task-list-item-image-padding: 0.7em;
+  $task-list-item-image-width: 4em;
+  $task-list-item-color: $base-font-color;
+  $task-list-item-background: lighten($action-color, 15%);
+  $task-list-item-detail-color: transparentize($task-list-item-color, 0.5);
+  $task-list-item-image-vert-alignment: top;
 
-  h2 {
-    font-size: 1em;
+  border-bottom: 1px solid transparentize($task-list-item-color, 0.9);
+  display: table;
+  margin-bottom: $base-spacing;
+  padding-bottom: 1em;
+  width: 100%;
+
+  .task-list-item-image,
+  .task-list-item-content {
+    display: table-cell;
+    vertical-align: $task-list-item-image-vert-alignment;
+  }
+
+  .task-list-item-image {
+    padding-right: $task-list-item-gutter;
+
+    > img {
+      background: $task-list-item-background;
+      border-radius: $base-border-radius;
+      display: block;
+      height: auto;
+      max-width: none;
+      padding: $task-list-item-image-padding;
+      width: $task-list-item-image-width;
+    }
+
+    .task-list-item-reverse-order & {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .task-list-item-content {
+    width: 100%;
+
+    h1 {
+      font-size: 1em;
+      margin: 0 0 0.5em 0;
+    }
+
+    p {
+      line-height: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p.task-list-item-detail {
+      color: $task-list-item-detail-color;
+      font-size: 0.9em;
+      font-style: italic;
+    }
   }
 }

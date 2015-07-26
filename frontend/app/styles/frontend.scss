@@ -9,14 +9,23 @@
 @import 'components/task-list-item';
 
 #app-header {
-  background-color: #fafafa;
-  margin-bottom: em(20);
-  border-bottom: 1px solid #ececec;
+  background-color: $dark-gray;
+  color: #fff;
+  margin-bottom: em(25);
+  border-bottom: 1px solid darken($dark-gray, 5%);
   line-height: em(55);
   height: em(55);
 
   a {
     display: inline;
+    color: #fff;
+    opacity: 1;
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+      color: #fff;
+      opacity: .8;
+    }
   }
 
   nav {

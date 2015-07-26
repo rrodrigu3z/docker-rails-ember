@@ -1,6 +1,17 @@
-<article class="task-list-item">
+{{!-- <article class="task-list-item">
   <h2>{{content.title}}</h2>
   <p>
     Created at: {{content.createdAt}}
   </p>
+</article> --}}
+
+<article class="task-list-item">
+  <div class="task-list-item-image">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+  </div>
+  <div class="task-list-item-content">
+    <h1>{{content.title}}</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+    <p class="task-list-item-detail">Created at: {{content.createdAt}}</p>
+  </div>
 </article>
