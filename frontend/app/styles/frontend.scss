@@ -1,0 +1,33 @@
+@import 'normalize';
+@import 'bourbon';
+@import 'variables';
+@import 'bitters';
+@import 'neat';
+
+@import 'mixins';
+
+@import 'components/task-list-item';
+
+#app-header {
+  background-color: #fafafa;
+  margin-bottom: em(20);
+  border-bottom: 1px solid #ececec;
+  line-height: em(55);
+  height: em(55);
+
+  a {
+    display: inline;
+  }
+
+  nav {
+    @include outer-container;
+  }
+
+  aside {
+    @include float-right;
+  }
+}
+
+#task-list {
+  @include outer-container;
+}

@@ -1,3 +1,5 @@
-{{# each task in model}}
-  <li>{{task.title}}</li>
-{{/each}}
+<section id="task-list">
+  {{# each task in model}}
+    {{task-list-item content=task}}
+  {{/each}}
+</section>
