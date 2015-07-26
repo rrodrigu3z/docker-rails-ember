@@ -45,9 +45,12 @@ that you don't need to enter in the IP, but this is entirely up to you.
 
 ## Goodies
 
-- Ember uses EmberCLI and Ember Data
-- Rails has Devise, Active Admin, and a full test suit already set up
-- Postgres for the database
+- Ember uses EmberCLI and Ember Data.
+- Includes Sass, Bourbon, Neat, and Bitters.
+- Uses the fantastic Ionicons icon library.
+- Includes a few example components.
+- Rails has Devise, Active Admin, and a full test suit already set up.
+- Postgres used for database - no setup required.
 
 ## License
 
