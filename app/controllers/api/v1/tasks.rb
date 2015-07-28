@@ -9,6 +9,18 @@ module API
           Task.all
         end
 
+        desc "Create a task"
+        # params do
+        #   requires :title, type: String, desc: "Title of the task"
+        #   requires :description, type: String, desc: "Description of the task"
+        # end
+        post "", root: :tasks do
+          Task.create!({
+            title: params[:task][:title],
+            description: params[:task][:description]
+          })
+        end
+
         desc "Return a task"
         params do
           requires :id, type: String, desc: "ID of the task"

@@ -8,6 +8,10 @@
 
 @import 'components/task-list-item';
 
+.form {
+  @include outer-container;
+}
+
 #app-header {
   background-color: $dark-gray;
   color: #fff;

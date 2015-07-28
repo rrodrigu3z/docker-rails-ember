@@ -37,8 +37,8 @@
     }
 
     .task-list-item-reverse-order & {
-      padding-right: 0;
       padding-left: 10px;
+      padding-right: 0;
     }
   }
 
@@ -51,14 +51,14 @@
     }
 
     p {
-      line-height: 1.5em;
       margin-bottom: 0.5em;
+      line-height: 1.5em;
     }
 
     p.task-list-item-detail {
-      color: $task-list-item-detail-color;
       font-size: 0.9em;
       font-style: italic;
+      color: $task-list-item-detail-color;
     }
   }
 }
